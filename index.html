@@ -1,0 +1,122 @@
+<!-- ============================= -->
+<!-- ARQUIVO: index.html -->
+<!-- ============================= -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarciaReborn</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- Topo / Cabeçalho com Logo -->
+<div class="topo">
+<div class="topo-container">
+<img src="./transferir.png" alt="Logo SonhoReborn" class="logo">
+<nav class="menu">
+<a href="#">Início</a>
+<a href="#">Bebês</a>
+<a href="#">Contato</a>
+</nav>
+</div>
+</div>
+
+
+<!-- Cabeçalho -->
+<header class="header">
+<h1>Marcia  Reborn</h1>
+<p>Arte Reborn feita com amor e delicadeza</p>
+<a class="btn-whatsapp" href="https://wa.me/5519997738109" target="_blank">
+Falar no WhatsApp
+</a>
+</header>
+
+
+<!-- Galeria -->
+<section class="galeria">
+<h2>Bebês Disponíveis</h2>
+
+
+<div class="carrossel">
+<div class="card">
+<img src="./e48dd2d1-47c8-413a-9936-fcfe5cb88302chupeta.jpg" alt="Bebê Reborn 1">
+<div class="info">
+<h3>Bebê Sofia</h3>
+<span class="preco">R$ 2.300,00</span>
+</div>
+</div>
+
+
+<div class="card">
+<img src="./5053c540-66c5-43bf-bc40-bf84cc29c41c baby.jpg" alt="Bebê Reborn 2">
+<div class="info">
+<h3>Bebê Miguel</h3>
+<span class="preco">R$ 2.500,00</span>
+</div>
+</div>
+
+
+<div class="card">
+<img src="./a0072969-bc2d-4e41-9df1-d448acd9683elaço.jpg" alt="Bebê Reborn 2">
+<div class="info">
+<h3>Bebê Miguel</h3>
+<span class="preco">R$ 2.500,00</span>
+</div>
+</div>
+
+
+<div class="card">
+<img src="./bebe.jpg" alt="Bebê Reborn 3">
+<div class="info">
+<h3>Bebê Alice</h3>
+<span class="preco">R$ 2.400,00</span>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5500000000000" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Falar no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp">
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+</style>
+
+
