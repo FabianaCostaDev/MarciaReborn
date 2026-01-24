@@ -1,0 +1,162 @@
+
+
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background-color: #ffffff;
+color: #555;
+}
+
+
+/* Topo */
+.topo {
+background-color: #ffffff;
+border-bottom: 1px solid #f2d6e6;
+}
+
+
+.topo-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 15px 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.logo {
+height: 70px;
+}
+
+
+.menu a {
+margin-left: 25px;
+text-decoration: none;
+font-size: 0.95rem;
+color: #d48cb6;
+font-weight: 500;
+}
+
+
+.menu a:hover {
+text-decoration: underline;
+}
+
+
+.header {
+background: linear-gradient(180deg, #f8cde3, #ffffff);
+text-align: center;
+padding: 60px 20px;
+}
+
+
+.header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 3rem;
+color: #d48cb6;
+margin-bottom: 10px;
+}
+
+
+.header p {
+font-size: 1.1rem;
+margin-bottom: 25px;
+}
+
+
+.btn-whatsapp {
+background-color: #f2a7cf;
+color: #fff;
+padding: 14px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 500;
+transition: 0.3s;
+}
+
+
+.btn-whatsapp:hover {
+background-color: #e18bbd;
+}
+
+.galeria {
+padding: 60px 8%;
+}
+
+
+.galeria h2 {
+text-align: center;
+font-family: 'Playfair Display', serif;
+font-size: 2.2rem;
+margin-bottom: 40px;
+color: #d48cb6;
+}
+
+
+.carrossel {
+display: flex;
+gap: 25px;
+overflow-x: auto;
+padding-bottom: 10px;
+}
+
+
+.carrossel::-webkit-scrollbar {
+height: 8px;
+}
+
+
+.carrossel::-webkit-scrollbar-thumb {
+background-color: #f2a7cf;
+border-radius: 10px;
+}
+
+
+.card {
+min-width: 260px;
+background-color: #fff;
+border-radius: 18px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+
+.card:hover {
+transform: translateY(-6px);
+}
+
+
+.card img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+
+.info {
+padding: 15px;
+text-align: center;
+}
+
+
+.info h3 {
+font-size: 1.1rem;
+margin-bottom: 8px;
+}
+
+
+.preco {
+font-size: 1rem;
+font-weight: 500;
+color: #d48cb6;
+}
+
+
+.footer {
+background-color: #f8cde3;
+text-align: center;
+padding: 20px;
+font-size: 0.9rem;
+}
