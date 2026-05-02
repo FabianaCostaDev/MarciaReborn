@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Teste</title>
+
+<style>
+.card img {
+  width: 200px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+
+.modal img {
+  display: block;
+  margin: 50px auto;
+  max-width: 80%;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="https://via.placeholder.com/300">
+</div>
+
+<div id="modal" class="modal">
+  <span class="fechar">&times;</span>
+  <img id="imgModal">
+</div>
+
+<script>
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("imgModal");
+const fechar = document.querySelector(".fechar");
+
+document.querySelector("img").onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+fechar.onclick = function() {
+  modal.style.display = "none";
+}
+
+modal.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>

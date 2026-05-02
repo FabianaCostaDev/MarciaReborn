@@ -1,0 +1,173 @@
+
+<link rel="stylesheet" href="style.css">
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("imgModal");
+  const fechar = document.querySelector(".fechar");
+
+  document.querySelectorAll(".galeria-todas .card img").forEach(img => {
+    img.addEventListener("click", function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  fechar.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+});
+</script>
+
+
+<h1 class="titulo-bonecas">Todas as Bonecas</h1>
+<a href="index.html" class="btn-voltar">← Voltar para o início</a>
+
+<input type="text" id="busca" placeholder="Buscar boneca...">
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5519997738109" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Falar no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp">
+</a>
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+</style>
+
+
+<div class="galeria-todas" id="listaBonecas">
+
+  <div class="card">
+    <img src="./bonitarosa.jpeg">
+    <div class="info">
+      <h3>Bebê Sofia</h3>
+      <span class="preco">R$ 235,00</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./olho.jpeg">
+    <div class="info">
+      <h3>Bebê Miguel</h3>
+      <span class="preco">R$ 363,00</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./florisvalda.jpeg">
+    <div class="info">
+      <h3>Bebê Livia</h3>
+      <span class="preco">R$ 290,00</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./olho azul.jpeg">
+    <div class="info">
+      <h3>Bebê April</h3>
+      <span class="preco">R$ 310,00</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./bemickei.jpeg">
+    <div class="info">
+      <h3>Bebê Miguel Mickey</h3>
+      <span class="preco">R$ 300,00</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./aquela.jpeg">
+    <div class="info">
+      <h3>Bebê Miguel Sorriso</h3>
+      <span class="preco">R$ 245,00</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./cilios.jpg">
+    <div class="info">
+      <h3>Bebê Olhos de Cílios</h3>
+      <span class="preco">R$ 275,00</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./florisvaldo.jpg">
+    <div class="info">
+      <h3>Bebê Levi</h3>
+      <span class="preco">R$ 260,00</span>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imgModal">
+</div>
+
+<script>
+const busca = document.getElementById("busca");
+
+busca.addEventListener("keyup", function() {
+  let texto = busca.value.toLowerCase();
+  let cards = document.querySelectorAll("#listaBonecas .card");
+
+  cards.forEach(card => {
+    let nome = card.querySelector("h3").innerText.toLowerCase();
+
+    if(nome.includes(texto)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+</script>
